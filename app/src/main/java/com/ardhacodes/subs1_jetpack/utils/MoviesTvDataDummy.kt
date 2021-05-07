@@ -8,6 +8,7 @@ object MoviesTvDataDummy {
         val movies = ArrayList<MovieTvEntity>()
 
         movies.add(MovieTvEntity(
+            "1",
             "Mortal Kombat",
             "Fantasy, Action, Adventure, Science Fiction, Thriller",
             "07 April 2021",
@@ -17,6 +18,7 @@ object MoviesTvDataDummy {
             "Washed-up MMA fighter Cole Young, unaware of his heritage, and hunted by Emperor Shang Tsung's best warrior, Sub-Zero, seeks out and trains with Earth's greatest champions as he prepares to stand against the enemies of Outworld in a high stakes battle for the universe."
         ))
         movies.add(MovieTvEntity(
+            "2",
             "Godzilla vs. Kong",
             "Science Fiction, Action, Drama",
             "24 Maret 2021",
@@ -26,6 +28,7 @@ object MoviesTvDataDummy {
             "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages."
         ))
         movies.add(MovieTvEntity(
+            "3",
             "Mulan",
             "Adventure, Fantasy",
             "04 September 2020",
@@ -35,6 +38,7 @@ object MoviesTvDataDummy {
             "When the Emperor of China issues a decree that one man per family must serve in the Imperial Chinese Army to defend the country from Huns, Hua Mulan, the eldest daughter of an honored warrior, steps in to take the place of her ailing father. She is spirited, determined and quick on her feet. Disguised as a man by the name of Hua Jun, she is tested every step of the way and must harness her innermost strength and embrace her true potential."
         ))
         movies.add(MovieTvEntity(
+            "4",
             "Monster Hunter ",
             "Fantasy, Action, Adventure",
             "13 Januari 2021",
@@ -44,6 +48,7 @@ object MoviesTvDataDummy {
             "A portal transports Cpt. Artemis and an elite unit of soldiers to a strange world where powerful monsters rule with deadly ferocity. Faced with relentless danger, the team encounters a mysterious hunter who may be their only hope to find a way home."
         ))
         movies.add(MovieTvEntity(
+            "5",
             "Raya and the Last Dragon ",
             "Animation, Adventure, Fantasy, Family, Action",
             "03 Maret 2021",
@@ -53,6 +58,7 @@ object MoviesTvDataDummy {
             "Long ago, in the fantasy world of Kumandra, humans and dragons lived together in harmony. But when an evil force threatened the land, the dragons sacrificed themselves to save humanity. Now, 500 years later, that same evil has returned and it’s up to a lone warrior, Raya, to track down the legendary last dragon to restore the fractured land and its divided people."
         ))
         movies.add(MovieTvEntity(
+            "6",
             "Tom & Jerry ",
             "Comedy, Family, Animation",
             "10 Maret 2021",
@@ -62,6 +68,7 @@ object MoviesTvDataDummy {
             "Tom the cat and Jerry the mouse get kicked out of their home and relocate to a fancy New York hotel, where a scrappy employee named Kayla will lose her job if she can’t evict Jerry before a high-class wedding at the hotel. Her solution? Hiring Tom to get rid of the pesky mouse."
         ))
         movies.add(MovieTvEntity(
+            "7",
             "The Croods: A New Age ",
             "Family, Fantasy, Animation, Comedy",
             "10 Maret 2021",
@@ -71,6 +78,7 @@ object MoviesTvDataDummy {
             "Searching for a safer habitat, the prehistoric Crood family discovers an idyllic, walled-in paradise that meets all of its needs. Unfortunately, they must also learn to live with the Bettermans -- a family that's a couple of steps above the Croods on the evolutionary ladder. As tensions between the new neighbors start to rise, a new threat soon propels both clans on an epic adventure that forces them to embrace their differences, draw strength from one another, and survive together."
         ))
         movies.add(MovieTvEntity(
+            "8",
             "Avengers: Infinity War ",
             "Adventure, Action, Science Fiction",
             "27 April 2018",
@@ -80,6 +88,7 @@ object MoviesTvDataDummy {
             "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain."
         ))
         movies.add(MovieTvEntity(
+            "9",
             "Joker",
             "Crime, Thriller, Drama",
             "02 Oktober 2019",
@@ -89,6 +98,7 @@ object MoviesTvDataDummy {
             "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure."
         ))
         movies.add(MovieTvEntity(
+            "10",
             "Avanger: End Game",
             "Adventure, Science Fiction, Action",
             "24 April 2019",
@@ -105,6 +115,7 @@ object MoviesTvDataDummy {
     {
         val tvshow = ArrayList<MovieTvEntity>()
         tvshow.add(MovieTvEntity(
+            "1",
             "Invicible",
             "Animation, Action & Adventure, Drama, Sci-Fi & Fantasy",
             "26 Maret 2021",
@@ -114,6 +125,7 @@ object MoviesTvDataDummy {
             "Mark Grayson is a normal teenager except for the fact that his father is the most powerful superhero on the planet. Shortly after his seventeenth birthday, Mark begins to develop powers of his own and enters into his father’s tutelage."
         ))
         tvshow.add(MovieTvEntity(
+            "2",
             "I Am Not an Animal",
             "Animation, Comedy",
             "2004",
@@ -123,6 +135,7 @@ object MoviesTvDataDummy {
             "I Am Not An Animal is an animated comedy series about the only six talking animals in the world, whose cosseted existence in a vivisection unit is turned upside down when they are liberated by animal rights activists."
         ))
         tvshow.add(MovieTvEntity(
+            "3",
             "Demon Slayer: Kimetsu no Yaiba",
             "Animation, Action & Adventure, Sci-Fi & Fantasy",
             "2019",
@@ -132,6 +145,7 @@ object MoviesTvDataDummy {
             "It is the Taishō period in Japan. Tanjirō, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjirō resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family."
         ))
         tvshow.add(MovieTvEntity(
+            "4",
             "Hunter x Hunter",
             "Action & Adventure, Animation, Drama",
             "2011",
@@ -141,6 +155,7 @@ object MoviesTvDataDummy {
             "Twelve-year-old Gon Freecss one day discovers that the father he had always been told was dead was alive. His Father, Ging, is a Hunter — a member of society's elite with a license to go anywhere or do almost anything. Gon, determined to follow in his father's footsteps, decides to take the Hunter Examination and eventually find his father to prove himself as a Hunter in his own right. But on the way, he learns that there is more to becoming a Hunter than previously thought, and the challenges that he must face are considered the toughest in the world."
         ))
         tvshow.add(MovieTvEntity(
+            "5",
             "Regular Show",
             "Animation, Comedy",
             "2010",
@@ -150,6 +165,7 @@ object MoviesTvDataDummy {
             "Two bored groundskeepers, Mordecai (a six-foot-tall blue jay) and Rigby (a hyperactive raccoon) are best friends who spend their days trying to entertain themselves by any means necessary, much to the displeasure of their boss. Their everyday pursuits often lead to things spiraling out of control and into the surreal."
         ))
         tvshow.add(MovieTvEntity(
+            "6",
             "Rick and Morty",
             "Animation, Comedy, Sci-Fi & Fantasy, Action & Adventure",
             "2013",
@@ -159,6 +175,7 @@ object MoviesTvDataDummy {
             "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school."
         ))
         tvshow.add(MovieTvEntity(
+            "7",
             "Digimon Tamers",
             "Sci-Fi & Fantasy, Animation, Action & Adventure",
             "2001",
@@ -168,6 +185,7 @@ object MoviesTvDataDummy {
             "A group of 12-year-old fans of the Digimon card game meet their own Digimon friends and start to duel bio-emerging Digimon who cross the barrier between the information network and their world."
         ))
         tvshow.add(MovieTvEntity(
+            "8",
             "One Piece",
             "Action & Adventure, Comedy, Animation",
             "1999",
@@ -177,6 +195,7 @@ object MoviesTvDataDummy {
             "Years ago, the fearsome pirate king Gol D. Roger was executed, leaving a huge pile of treasure and the famous One Piece behind. Whoever claims the One Piece will be named the new pirate king. Monkey D. Luffy, a boy who consumed one of the \"Devil's Fruits\", has it in his head that he'll follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and he's surrounded by a bevy of skilled fighters and thieves to help him along the way. Monkey D. Luffy brings a bunch of his crew followed by, Roronoa Zoro, Nami, Usopp, Sanji, Tony-Tony Chopper, Nico Robin, Franky, and Brook. They will do anything to get the One Piece and become King of the Pirates!.."
         ))
         tvshow.add(MovieTvEntity(
+            "9",
             "Shaman King",
             "Animation, Action & Adventure, Sci-Fi & Fantasy",
             "2001",
@@ -186,6 +205,7 @@ object MoviesTvDataDummy {
             "Asakura Yoh is a shaman, a person who communicates with ghosts. He enters the Shaman Fight, for whoever wins the tournament gets to commune with the Great Spirit, God . . . that and his fiance Anna wants to be the wife of the Shaman King. Helping him are his friends Manta, Horo Horo, Ryu, and his samurai ghost partner, Amidamaru."
         ))
         tvshow.add(MovieTvEntity(
+            "10",
             "Death Note",
             "Animation, Mystery",
             "2006",
@@ -195,6 +215,7 @@ object MoviesTvDataDummy {
             "Light Yagami is an ace student with great prospects—and he’s bored out of his mind. But all that changes when he finds the Death Note, a notebook dropped by a rogue Shinigami death god. Any human whose name is written in the notebook dies, and Light has vowed to use the power of the Death Note to rid the world of evil. But will Light succeed in his noble goal, or will the Death Note turn him into the very thing he fights against?"
         ))
         tvshow.add(MovieTvEntity(
+            "11",
             "Attack On Titan",
             "Sci-Fi & Fantasy, Animation, Action & Adventure",
             "2013",
