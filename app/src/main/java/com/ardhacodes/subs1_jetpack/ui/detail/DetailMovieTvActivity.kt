@@ -23,5 +23,9 @@ class DetailMovieTvActivity : AppCompatActivity() {
         setContentView(activityDetailContentBinding.root)
         setSupportActionBar(findViewById(R.id.toolbar))
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        val adapter = DetailMovieTvAdapter()
+
+
     }
 }
