@@ -7,11 +7,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ardhacodes.subs1_jetpack.R
 import com.ardhacodes.subs1_jetpack.data.MovieTvEntity
 import com.ardhacodes.subs1_jetpack.databinding.ItemTvBinding
+import com.ardhacodes.subs1_jetpack.ui.CallbackMovTv
 import com.ardhacodes.subs1_jetpack.ui.detail.DetailMovieTvActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 
-class TvAdapter : RecyclerView.Adapter<TvAdapter.TvViewHolder>() {
+class TvAdapter(private val callback:CallbackMovTv) : RecyclerView.Adapter<TvAdapter.TvViewHolder>() {
     private val listTv = ArrayList<MovieTvEntity>()
 
     inner class TvViewHolder(private val binding: ItemTvBinding) : RecyclerView.ViewHolder(binding.root) {
@@ -22,15 +23,14 @@ class TvAdapter : RecyclerView.Adapter<TvAdapter.TvViewHolder>() {
                 itemYearrelease.text = tv.yearrelease
                 itemScore.text = tv.score
                 itemView.setOnClickListener {
-                    val intent = Intent(itemView.context, DetailMovieTvActivity::class.java)
-                    intent.putExtra(DetailMovieTvActivity.EXTRA_MOV, tv.title)
-                    itemView.context.startActivity(intent)
+//                    val intent = Intent(itemView.context, DetailMovieTvActivity::class.java)
+//                    intent.putExtra(DetailMovieTvActivity.EXTRA_MOV, tv.title)
+//                    itemView.context.startActivity(intent)
+                    callback.onItemClicked(tv)
                 }
                 Glide.with(itemView.context)
                     .load(tv.poster)
-                    .apply(
-                        RequestOptions.placeholderOf(R.drawable.ic_loading)
-                        .error(R.drawable.ic_error))
+                    .apply(RequestOptions())
                     .into(ivPoster)
             }
         }
