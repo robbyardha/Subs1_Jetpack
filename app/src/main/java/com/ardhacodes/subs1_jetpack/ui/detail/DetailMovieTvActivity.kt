@@ -13,6 +13,8 @@ import com.ardhacodes.subs1_jetpack.ui.movie.MovieViewModel
 import com.ardhacodes.subs1_jetpack.utils.Helper.EXTRA_MOVIE
 import com.ardhacodes.subs1_jetpack.utils.Helper.EXTRA_TV_SHOW
 import com.ardhacodes.subs1_jetpack.utils.Helper.setImageGlide
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 
 class DetailMovieTvActivity : AppCompatActivity() {
     companion object{
@@ -22,14 +24,59 @@ class DetailMovieTvActivity : AppCompatActivity() {
 
     private lateinit var detailbinding : ActivityDetailMovieTvBinding
     private lateinit var result: MovieTvEntity
+    private lateinit var viewModel: DetailViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         detailbinding = ActivityDetailMovieTvBinding.inflate(layoutInflater)
-        var view = detailbinding.root
-        setContentView(view)
+        setContentView(detailbinding.root)
 
+        viewModelProviderConfig()
+
+//        Declaration Binding
+        var titlebinding = detailbinding.tvTitle
+        var genrebinding = detailbinding.tvGenre
+        var releasebinding = detailbinding.tvYear
+        var scorebinding = detailbinding.tvScore
+        var durationbinding = detailbinding.tvDuration
+        var overviewbinding = detailbinding.tvOverview
+        var posterbinding = detailbinding.ivPoster
+
+        //Load
+        titlebinding.text = result.title
+        genrebinding.text = result.genre
+        releasebinding.text = "Release : ${result.yearrelease}"
+        scorebinding.text = "Score : ${result.score}"
+        durationbinding.text = "Duration : ${result.duration}"
+        overviewbinding.text = result.overview
+        //load Image using Glide
+        Glide.with(this@DetailMovieTvActivity)
+                .load(result.poster)
+                .apply(RequestOptions())
+                .into(posterbinding)
+
+//        Load image using helper
+    //        setImageGlide(this@DetailMovieTvActivity, result.poster, detailbinding.ivPoster)
+
+//        Databinding quick
+//        detailbinding.tvTitle.text = result.title
+//        detailbinding.tvGenre.text = result.genre
+//        detailbinding.tvYear.text = "Release : ${result.yearrelease}"
+//        detailbinding.tvScore.text = "Score : ${result.score}"
+//        detailbinding.tvDuration.text = "Duration : ${result.duration}"
+//        detailbinding.tvOverview.text = result.overview
+
+
+
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return super.onSupportNavigateUp()
+    }
+
+    fun viewModelProviderConfig()
+    {
         val viewmodel = ViewModelProvider(this@DetailMovieTvActivity, ViewModelProvider.NewInstanceFactory())[DetailViewModel::class.java]
         val ex_id_mov_tv = intent.getStringExtra(EXTRA_MOV)
         val ex_category = intent.getStringExtra(EXTRA_CATEGORY)
@@ -47,32 +94,13 @@ class DetailMovieTvActivity : AppCompatActivity() {
             }
             result = viewmodel.getTvShow()!!
         }
-
-        var titlebinding = detailbinding.tvTitle
-        titlebinding.text = result.title
-
-        detailbinding.tvTitle.text = result.title
-        detailbinding.tvGenre.text = result.genre
-        detailbinding.tvYear.text = "Release : ${result.yearrelease}"
-        detailbinding.tvScore.text = "Score : ${result.score}"
-        detailbinding.tvDuration.text = "Duration : ${result.duration}"
-        detailbinding.tvOverview.text = result.overview
-        setImageGlide(this@DetailMovieTvActivity, result.poster, detailbinding.ivPoster)
-
-//        val actionBar = supportActionBar
-//        actionBar!!.title = "Detail"
-//        actionBar.setDisplayHomeAsUpEnabled(true)
-
-//        setContentView(activityDetailContentBinding.root)
-//        setSupportActionBar(findViewById(R.id.toolbar))
-//        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-//        val adapter = DetailMovieTvAdapter()
-
-
     }
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
-        return super.onSupportNavigateUp()
+
+    fun TitleActionBar()
+    {
+        val getTitle =intent.getStringExtra(EXTRA_MOV)
+        viewModel = ViewModelProvider(this).get(DetailViewModel::class.java)
+        val actionbar = supportActionBar
+        actionbar!!.title = "Detail ${getTitle}"
     }
 }

@@ -42,7 +42,7 @@ object MoviesTvDataDummy {
             "Monster Hunter ",
             "Fantasy, Action, Adventure",
             "13 Januari 2021",
-            "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/aKx1ARwG55zZ0GpRvU2WrGrCG9o.jpg",
+            "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1UCOF11QCw8kcqvce8LKOO6pimh.jpg",
             "71",
             "1 Hour 44 Minute",
             "A portal transports Cpt. Artemis and an elite unit of soldiers to a strange world where powerful monsters rule with deadly ferocity. Faced with relentless danger, the team encounters a mysterious hunter who may be their only hope to find a way home."
@@ -92,7 +92,7 @@ object MoviesTvDataDummy {
             "Joker",
             "Crime, Thriller, Drama",
             "02 Oktober 2019",
-            "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+            "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
             "82",
             "2 Hour 02 Minute",
             "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure."
@@ -102,7 +102,7 @@ object MoviesTvDataDummy {
             "Avanger: End Game",
             "Adventure, Science Fiction, Action",
             "24 April 2019",
-            "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+            "https://ae01.alicdn.com/kf/HTB16OQ.MxTpK1RjSZR0q6zEwXXaN/Cetak-Kustom-Kanvas-Dekorasi-Marvel-Infinity-War-Endgame-Poster-Superhero-Avengers-Endgame-Stiker-Rumah-Kamar-Wall.jpg_Q90.jpg_.webp",
             "83",
             "3 Hour 01 Minute",
             "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store."

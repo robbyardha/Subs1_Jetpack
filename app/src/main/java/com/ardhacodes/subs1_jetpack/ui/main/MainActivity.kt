@@ -15,6 +15,15 @@ class MainActivity : AppCompatActivity() {
         val sectionsPagerAdapter = SectionPagerAdapter(this, supportFragmentManager)
         activityMainbinding.viewPager.adapter = sectionsPagerAdapter
         activityMainbinding.tabs.setupWithViewPager(activityMainbinding.viewPager)
+
+        TitleActionBar()
+
+    }
+
+    fun TitleActionBar()
+    {
+        val actionBar = supportActionBar
+        actionBar?.title = "Home Theater List Movie FOX"
         supportActionBar?.elevation = 0f
     }
 }
