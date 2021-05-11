@@ -20,8 +20,8 @@ class TvAdapter(private val callback:CallbackMovTv) : RecyclerView.Adapter<TvAda
             with(binding) {
                 itemTitle.text = tv.title
                 itemGenre.text = tv.genre
-                itemYearrelease.text = tv.yearrelease
-                itemScore.text = tv.score
+                itemYearrelease.text = "Release : ${tv.yearrelease}"
+                itemScore.text = "Score : ${tv.score}"
                 itemView.setOnClickListener {
 //                    val intent = Intent(itemView.context, DetailMovieTvActivity::class.java)
 //                    intent.putExtra(DetailMovieTvActivity.EXTRA_MOV, tv.title)

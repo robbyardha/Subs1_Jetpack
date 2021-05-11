@@ -36,16 +36,20 @@ class TvFragment : Fragment(), CallbackMovTv {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         if (activity != null) {
-            val viewmodel =ViewModelProvider(this, ViewModelProvider.NewInstanceFactory())[TvViewModel::class.java]
-            val tv = viewmodel.getdDataTv()
-            val tvadaper = TvAdapter(this)
-            tvadaper.setTv(tv)
+            viewModelProviderConfig()
+        }
+    }
 
-            with(fragmentTvBinding.rvTv) {
-                layoutManager = LinearLayoutManager(context)
-                setHasFixedSize(true)
-                this.adapter = tvadaper
-            }
+    private fun viewModelProviderConfig() {
+        val viewmodel =ViewModelProvider(this, ViewModelProvider.NewInstanceFactory())[TvViewModel::class.java]
+        val tv = viewmodel.getdDataTv()
+        val tvadaper = TvAdapter(this)
+        tvadaper.setTv(tv)
+
+        with(fragmentTvBinding.rvTv) {
+            layoutManager = LinearLayoutManager(context)
+            setHasFixedSize(true)
+            this.adapter = tvadaper
         }
     }
 

@@ -34,17 +34,8 @@ class MovieFragment : Fragment(), CallbackMovTv {
 //            val movie = MoviesTvDataDummy.DataMovies()
 //            val movieAdapter = MovieAdapter()
 //            movieAdapter.setMovies(movie)
+            viewModelProviderConfig()
 
-            val viewmodel =ViewModelProvider(this, ViewModelProvider.NewInstanceFactory())[MovieViewModel::class.java]
-            val movie = viewmodel.getdDataMovie()
-            val movieAdapter = MovieAdapter(this)
-            movieAdapter.setMovies(movie)
-
-            with(fragmentMovieBind.rvMovie) {
-                layoutManager = LinearLayoutManager(context)
-                setHasFixedSize(true)
-                this.adapter = movieAdapter
-            }
         }
     }
 
@@ -64,5 +55,18 @@ class MovieFragment : Fragment(), CallbackMovTv {
         )
     }
 
+    fun viewModelProviderConfig()
+    {
+        val viewmodel =ViewModelProvider(this, ViewModelProvider.NewInstanceFactory())[MovieViewModel::class.java]
+        val movie = viewmodel.getdDataMovie()
+        val movieAdapter = MovieAdapter(this)
+        movieAdapter.setMovies(movie)
+
+        with(fragmentMovieBind.rvMovie) {
+            layoutManager = LinearLayoutManager(context)
+            setHasFixedSize(true)
+            this.adapter = movieAdapter
+        }
+    }
 
 }

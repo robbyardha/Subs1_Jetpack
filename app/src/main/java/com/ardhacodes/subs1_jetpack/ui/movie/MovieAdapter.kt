@@ -43,8 +43,8 @@ class MovieAdapter(val callback: CallbackMovTv) : RecyclerView.Adapter<MovieAdap
             with(binding) {
                 itemTitle.text = movie.title
                 itemGenre.text = movie.genre
-                itemYearrelease.text = movie.yearrelease
-                itemScore.text = movie.score
+                itemYearrelease.text = "Release : ${movie.yearrelease}"
+                itemScore.text = "Score: ${movie.score}"
 
                 itemView.setOnClickListener {
 //                    val intent = Intent(itemView.context, DetailMovieTvActivity::class.java)
