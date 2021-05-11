@@ -1,0 +1,17 @@
+1. Main
+a. Ambil Data Movie
+b. Ambil Data Tv
+c. Tampilkan Data Movie Berupa List
+d. Tampilkan Data Tv Berupa List
+
+2. Movie
+a. Ambil Data Movie
+b. Tampilkan Data Movie
+
+3. Tv
+a. Ambil Data Tv
+b. Tampilkan Data Tv
+
+4. Detail
+a. Ambil Data
+b. lakukan pengecekan jika id tidak sama dengan null, munculkan data penuh berdasarkan id
