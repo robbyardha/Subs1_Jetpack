@@ -20,7 +20,7 @@ class DetailViewModel : ViewModel() {
     private fun getListTvShow(): ArrayList<MovieTvEntity> = MoviesTvDataDummy.DataTvShow() as ArrayList<MovieTvEntity>
 
 
-    fun getMovie(): MovieTvEntity? {
+    fun getMovieById(): MovieTvEntity? {
         var result: MovieTvEntity? = null
         val listMovie = getListMovie()
         for (movie in listMovie){
@@ -33,7 +33,7 @@ class DetailViewModel : ViewModel() {
     }
 
 
-    fun getTvShow(): MovieTvEntity? {
+    fun getTvShowById(): MovieTvEntity? {
         var result: MovieTvEntity? = null
         val listTvShow = getListTvShow()
         for(tvshow in listTvShow){

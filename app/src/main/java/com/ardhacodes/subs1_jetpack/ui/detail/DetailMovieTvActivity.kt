@@ -85,14 +85,14 @@ class DetailMovieTvActivity : AppCompatActivity() {
             ex_id_mov_tv?.let {
                 viewmodel.setMovieById(it)
             }
-            result = viewmodel.getMovie()!!
+            result = viewmodel.getMovieById()!!
         }
 
         else if (ex_category.equals(EXTRA_TV_SHOW, ignoreCase = true)){
             ex_id_mov_tv?.let {
                 viewmodel.setTvShowById(it)
             }
-            result = viewmodel.getTvShow()!!
+            result = viewmodel.getTvShowById()!!
         }
     }
 
