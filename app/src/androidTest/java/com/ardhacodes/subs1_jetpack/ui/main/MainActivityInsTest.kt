@@ -23,8 +23,14 @@ class MainActivityInsTest
     @get:Rule
     var activityrule = ActivityScenarioRule(MainActivity::class.java)
 
+
     @Test
     fun detailMovie() {
+        onView(withText("Movie")).perform(click())
+        onView(withId(R.id.rv_movie)).check(ViewAssertions.matches(isDisplayed()))
+        onView(withId(R.id.rv_movie)).perform(RecyclerViewActions.scrollToPosition<RecyclerView.ViewHolder>(mov.size))
+
+
         onView(withId(R.id.rv_movie)).check(ViewAssertions.matches(isDisplayed()))
         onView(withId(R.id.rv_movie)).perform(RecyclerViewActions.scrollToPosition<RecyclerView.ViewHolder>(0))
         onView(withId(R.id.rv_movie)).perform(RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(0, click()))
@@ -39,6 +45,33 @@ class MainActivityInsTest
 
         onView(withId(R.id.tv_title)).check(ViewAssertions.matches(withText(mov[0].title)))
         onView(withId(R.id.tv_overview)).check(ViewAssertions.matches(withText(mov[0].overview)))
+
+        Espresso.pressBack()
+    }
+
+
+    @Test
+    fun detailTv() {
+        //Load Tv Show
+        onView(withText("TV Show")).perform(click())
+        onView(withId(R.id.rv_tv)).check(ViewAssertions.matches(isDisplayed()))
+        onView(withId(R.id.rv_tv)).perform(RecyclerViewActions.scrollToPosition<RecyclerView.ViewHolder>(mov.size))
+
+        //Displaying
+        onView(withId(R.id.rv_tv)).check(ViewAssertions.matches(isDisplayed()))
+        onView(withId(R.id.rv_tv)).perform(RecyclerViewActions.scrollToPosition<RecyclerView.ViewHolder>(0))
+        onView(withId(R.id.rv_tv)).perform(RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(0, click()))
+
+        onView(withId(R.id.cardView2)).check(ViewAssertions.matches(isDisplayed()))
+        onView(withId(R.id.tv_title)).check(ViewAssertions.matches(isDisplayed()))
+        onView(withId(R.id.tv_genre)).check(ViewAssertions.matches(isDisplayed()))
+        onView(withId(R.id.tv_duration)).check(ViewAssertions.matches(isDisplayed()))
+        onView(withId(R.id.tv_year)).check(ViewAssertions.matches(isDisplayed()))
+        onView(withId(R.id.tv_score)).check(ViewAssertions.matches(isDisplayed()))
+        onView(withId(R.id.tv_overview)).check(ViewAssertions.matches(isDisplayed()))
+
+        onView(withId(R.id.tv_title)).check(ViewAssertions.matches(withText(tv[0].title)))
+        onView(withId(R.id.tv_overview)).check(ViewAssertions.matches(withText(tv[0].overview)))
 
         Espresso.pressBack()
     }

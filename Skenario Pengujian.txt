@@ -1,17 +1,25 @@
-1. Main
-a. Ambil Data Movie
-b. Ambil Data Tv
-c. Tampilkan Data Movie Berupa List
-d. Tampilkan Data Tv Berupa List
+Skenario Testing
 
-2. Movie
-a. Ambil Data Movie
-b. Tampilkan Data Movie
+MovieViewModelTest
+1. Memastikan Data sejumlah 10
+2. Memastikan Data Tidak Null
 
-3. Tv
-a. Ambil Data Tv
-b. Tampilkan Data Tv
+TvViewModelTest
+1. Memastikan Data Tidak Null
+2. Memastikan data sejumlah 11
 
-4. Detail
-a. Ambil Data
-b. lakukan pengecekan jika id tidak sama dengan null, munculkan data penuh berdasarkan id
+DetailViewModelTest
+1. Memastikan Data tidak Null
+2. Memastikan Data sesuai dengan id selected
+3. Menampilkan data detail sesuai id selected
+
+MainActivityTest
+1. Memastikan data tidak Null
+2. Menampilkan data
+
+MainActivityInsTest
+1. Memastikan data tidak null
+2. Menampilkan data Movie sejumlah 10
+3. Menampilkan data movie detail sesuai dengan id selected
+4. Menampilkan data tv sejumlah 11
+5. Menampilkan data tv detail sesuai dengan id selected
