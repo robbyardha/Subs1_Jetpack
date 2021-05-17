@@ -49,6 +49,7 @@ class DetailMovieTvActivity : AppCompatActivity() {
         releasebinding.text = "Release : ${result.yearrelease}"
         scorebinding.text = "Score : ${result.score}"
         durationbinding.text = "Duration : ${result.duration}"
+//        durationbinding.text = result.duration
         overviewbinding.text = result.overview
         //load Image using Glide
         Glide.with(this@DetailMovieTvActivity)
